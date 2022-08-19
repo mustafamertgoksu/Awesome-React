@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Container } from '../styles/Container.styles';
 import { useSpring, animated } from 'react-spring';
+import { Container } from '../assets/styles/Container.styles';
 
 const About: React.FC = () => {
   const props = useSpring({
@@ -12,7 +11,7 @@ const About: React.FC = () => {
     delay: 200,
   });
   return (
-    <Container className="about">
+    <Container>
       <animated.div style={props}>
         <h1>This is About Page</h1>
       </animated.div>
